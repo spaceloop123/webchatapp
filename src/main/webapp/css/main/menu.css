@@ -1,0 +1,272 @@
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#layout {
+    position: absolute;
+    padding-left: 0;
+}
+
+#layout.active #menu {
+    left: 256px;
+    width: 256px;
+}
+
+#layout.active .menu-link {
+    left: 256px;
+}
+
+#menu {
+    margin-left: -256px; /* "#menu" width */
+    width: 256px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* the menu or its navicon stays above all content */
+    background: #e0e0e0;
+    overflow-y: auto;
+    height: 100%;
+    background-color: white;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1980392) 0px 2px 4px, rgba(0, 0, 0, 0.1980392) 0px 0px 3px;
+    -webkit-overflow-scrolling: touch;
+
+    overflow-x: hidden;
+}
+
+#menu .users a {
+    color: #000;
+    border: none;
+    text-decoration: none;
+}
+
+#menu .pure-menu {
+    border: none;
+    background: transparent;
+    width: 100%;
+    overflow: hidden;
+}
+
+#menu .pure-menu a:hover,
+#menu .pure-menu a:focus {
+    background: #e0e0e0;
+    cursor: pointer;
+}
+
+#menu .pure-menu-selected,
+#menu .pure-menu-heading {
+    background: #1f8dd6;
+    height: 128px;
+}
+
+#menu .pure-menu-selected a {
+    color: #e0e0e0;
+}
+
+#menu .pure-menu-heading {
+    font-size: 110%;
+    /* color: #fff; */
+    margin: 0;
+}
+
+#menu .pure-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Roboto';
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    min-height: 48px;
+    padding: 0px 16px;
+}
+
+/*
+Dynamic btn For Responsive Menu
+*/
+
+#menu .title {
+    height: 32px;
+    position: relative;
+    margin-left: 11px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    align-items: center;
+    color: #888;
+}
+
+#menu .title > p {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 19px;
+}
+
+.menu-link {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0; /* "#menu width" */
+    background: #000;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 14px; /* btn size */
+    z-index: 10;
+    height: auto;
+    width: 2em;
+    padding: 2.1em 1.6em;
+    z-index: 11;
+}
+
+.menu-link:hover
+    /* .menu-link:focus { */
+{
+    /* background: rgba(0, 0, 0, 0.0980392); */
+}
+
+.menu-link span {
+    position: relative;
+    display: block;
+}
+
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
+    background-color: #fff;
+    width: 100%;
+    height: 0.2em;
+}
+
+.menu-link span:before,
+.menu-link span:after {
+    position: absolute;
+    margin-top: -0.6em;
+    content: " ";
+}
+
+.menu-link span:after {
+    margin-top: 0.6em;
+}
+
+/*
+Profile info
+*/
+
+#profile-name {
+    margin-left: 11px;
+    margin-top: 96px;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Roboto';
+    color: #fff;
+}
+
+/*
+FAB
+*/
+
+#fab {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background-color: #FF9100;
+
+    left: 175px;
+    top: 96px;
+
+    transform: scale(1, 1);
+
+    transition: left .3s, top .3s, transform .3s, border-radius .25s, background-color .25s;
+    transition-delay: .1s, .1s, .1s, 0s;
+    transition-timing-function: cubic-bezier(.55, 0, .1, 1);
+}
+
+#fab:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#fab.active {
+    left: 96px;
+    top: 32px;
+    border-radius: 0%;
+
+    background-color: #34495e;
+    color: #333;
+
+    box-shadow: none;
+    transform: scale(4, 2);
+
+    transition: left .3s, top .3s, transform .3s, border-radius .25s, background-color .25s;
+    transition-delay: 0s, 0s, 0s, .1s;
+    transition-timing-function: cubic-bezier(.55, 0, .1, 1);
+}
+
+/*
+FAB's controls
+*/
+
+#accept,
+#decline,
+.text-input.name {
+    visibility: hidden;
+    transition: visibility .00005s;
+    transition-delay: .0s;
+}
+
+#accept.active,
+#decline.active,
+.text-input.name.active {
+    visibility: visible;
+    transition: visibility .25s;
+    transition-delay: .25s;
+}
+
+#accept,
+#decline {
+    top: 76px;
+}
+
+#accept {
+    left: 155px;
+}
+
+#decline {
+    left: 59px;
+}
+
+.text-input.name {
+    top: 70px;
+}
+
+/*
+FAB's pencil icon
+*/
+
+#pencil-icon {
+    margin-left: 22px;
+    margin-top: 24px;
+    position: absolute;
+
+    visibility: visible;
+
+    transition: visibility .25s;
+    transition-delay: .25s;
+}
+
+#pencil-icon.active {
+    visibility: hidden;
+
+    transition: visibility .00005s;
+    transition-delay: 0s;
+}

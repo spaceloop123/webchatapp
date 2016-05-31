@@ -1,0 +1,53 @@
+.btn {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: inherit;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-raised:hover {
+    background: rgba(153, 153, 153, 0.2);
+}
+
+.btn-raised:focus {
+    outline: 0;
+    background: rgba(153, 153, 153, 0.4);
+}
+
+.btn-raised:active {
+    background: rgba(153, 153, 153, 0.4);
+}
+
+.btn-raised:disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background: rgba(153, 153, 153, 0);
+}
+
+.btn-flat:hover {
+    border: none;
+    background: rgba(204, 204, 204, 0.15);
+}
+
+.btn-flat:active {
+    border: none;
+    background: rgba(204, 204, 204, 0.25);
+}
+
+.btn-flat {
+    color: #f1c40f;
+}
+
+.btn-raised {
+    color: rgb(79, 125, 201);
+}

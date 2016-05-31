@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/main/content.css" rel="stylesheet"/>
+    <link href="css/main/menu.css" rel="stylesheet"/>
+    <link href="css/font-awesome.css" rel="stylesheet"/>
+    <link href="css/responsive/responsive.css" rel="stylesheet"/>
+    <link href="css/tools/input-fields.css" rel="stylesheet"/>
+    <link href="css/tools/buttons.css" rel="stylesheet"/>
+
+</head>
+<body onload="run();">
+
+<div id="layout">
+    <a href="#menu" id="menuLink" class="menu-link"><span></span></a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <div class="pure-menu-heading">
+                <div id="profile-name">My name</div>
+                <div id="fab">
+                    <i class="fa fa-pencil fa-lg fa-inverse" id="pencil-icon"></i>
+                </div>
+                <fieldset class="text-input name" id="text-input-name">
+                    <input type="text" id="myname-edit" required>
+                    <hr>
+                    <label>Username</label>
+                </fieldset>
+                <input type="button" class="btn btn-flat" id="decline" value="Decline"/>
+                <input type="button" class="btn btn-flat" id="accept" value="Accept"/>
+            </div>
+
+            <div class="title">
+                <p>Participants</p>
+            </div>
+
+            <div class="users">
+                <a class="pure-menu-item" href="#">
+                    <div class="pure-menu-link"><span class="fa fa-user fa-fw"></span>&nbsp; Username 1</div>
+                </a>
+                <a class="pure-menu-item" href="#">
+                    <div class="pure-menu-link"><span class="fa fa-user fa-fw"></span>&nbsp; Username 2</div>
+                </a>
+                <a class="pure-menu-item" href="#">
+                    <div class="pure-menu-link"><span class="fa fa-user fa-fw"></span>&nbsp; Username 3</div>
+                </a>
+                <a class="pure-menu-item" href="#">
+                    <div class="pure-menu-link"><span class="fa fa-user fa-fw"></span>&nbsp; Username 4</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="page">
+        <div id="content-contain">
+            <div id="content">
+                <div class="header"></div>
+                <div id="overflow-background"></div>
+                <div id="dialog">
+                    <div class="title">Delete this message?</div>
+                    <input type="button" class="btn btn-raised" id="cancel" value="Decline"/>
+                    <input type="button" class="btn btn-raised" id="delete" value="Delete"/>
+                </div>
+
+                <div class="body">
+                    <div class="msg-box">
+                        <div class="msg-body">
+                            <ul class="chat-list"></ul>
+                        </div>
+
+                        <div class="msg-footer">
+                            <div class="textarea-contain">
+                                <fieldset class="text-input msg">
+                                    <textarea type="text" id="msg-input-area" rows="2" required></textarea>
+                                    <hr>
+                                    <label>Enter message...</label>
+                                </fieldset>
+                            </div>
+                            <div class="btn-contain">
+                                <div class="btn-send">
+                                    <div class="icon plane" id="msg-input-btn">
+											<span class="fa-stack fa-2x">
+												<i class="fa fa-circle fa-stack-2x"></i>
+												<i class="fa fa-paper-plane fa-stack-1x fa-inverse"
+                                                   id="paper-plane"></i>
+											</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/class-work.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/menu.js"></script>
+</div>
+</body>
+</html>

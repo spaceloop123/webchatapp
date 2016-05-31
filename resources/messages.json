@@ -1,0 +1,162 @@
+[
+  {
+    "id": "127231776732",
+    "author": "My name",
+    "timestamp": 1464509136405,
+    "text": "Y",
+    "edited": false,
+    "removed": false
+  },
+  {
+    "id": "301075677840",
+    "author": "My name",
+    "timestamp": 1464659097136,
+    "text": "test",
+    "edited": false,
+    "removed": false
+  },
+  {
+    "id": "82985916680",
+    "author": "sanya",
+    "timestamp": 1464665896287,
+    "text": "12345",
+    "edited": true,
+    "removed": false
+  },
+  {
+    "id": "160866781091",
+    "author": "sanya",
+    "timestamp": 1464665980775,
+    "text": "test",
+    "edited": false,
+    "removed": true
+  },
+  {
+    "id": "52627497154",
+    "author": "yyy",
+    "timestamp": 1464679373642,
+    "text": "12345",
+    "edited": true,
+    "removed": false
+  },
+  {
+    "id": "876487041178",
+    "author": "yyy",
+    "timestamp": 1464679381919,
+    "text": "new",
+    "edited": false,
+    "removed": true
+  },
+  {
+    "id": "258936969513",
+    "author": "vas",
+    "timestamp": 1464679606909,
+    "text": "23",
+    "edited": true,
+    "removed": true
+  },
+  {
+    "id": "894579273509",
+    "author": "vas",
+    "timestamp": 1464679616202,
+    "text": "sdf",
+    "edited": false,
+    "removed": false
+  },
+  {
+    "id": "55379312690",
+    "author": "maxim",
+    "timestamp": 1464680076820,
+    "text": "test",
+    "edited": false,
+    "removed": true
+  },
+  {
+    "id": "965338302642",
+    "author": "maxim",
+    "timestamp": 1464680079224,
+    "text": "tttdg",
+    "edited": true,
+    "removed": false
+  },
+  {
+    "id": "7004636699",
+    "author": "maxim",
+    "timestamp": 1464680102507,
+    "text": "\n",
+    "edited": false,
+    "removed": true
+  },
+  {
+    "id": "566985863542",
+    "author": "lesha",
+    "timestamp": 1464680796895,
+    "text": "testjjjjjuuuuusdfsdf",
+    "edited": true,
+    "removed": true
+  },
+  {
+    "id": "380315267354",
+    "author": "lesha",
+    "timestamp": 1464680811587,
+    "text": "hhhhsdsdf",
+    "edited": true,
+    "removed": true
+  },
+  {
+    "id": "354718177201",
+    "author": "sanya",
+    "timestamp": 1464681130208,
+    "text": "tesrssss",
+    "edited": false,
+    "removed": false
+  },
+  {
+    "id": "120860457332",
+    "author": "sanya",
+    "timestamp": 1464681137562,
+    "text": "sdg",
+    "edited": false,
+    "removed": true
+  },
+  {
+    "id": "759003710892",
+    "author": "sanya",
+    "timestamp": 1464682518614,
+    "text": "wrer213",
+    "edited": true,
+    "removed": false
+  },
+  {
+    "id": "114199647408",
+    "author": "sanya",
+    "timestamp": 1464682597464,
+    "text": "123",
+    "edited": false,
+    "removed": true
+  },
+  {
+    "id": "131414877807",
+    "author": "lesha",
+    "timestamp": 1464683120094,
+    "text": "123",
+    "edited": false,
+    "removed": true
+  },
+  {
+    "id": "940467639136",
+    "author": "sanya",
+    "timestamp": 1464683438982,
+    "text": "124",
+    "edited": false,
+    "removed": true
+  },
+  {
+    "id": "753107501117",
+    "author": "sanya",
+    "timestamp": 1464683439680,
+    "text": "345",
+    "edited": false,
+    "removed": false
+  }
+]
